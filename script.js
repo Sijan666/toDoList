@@ -18,11 +18,9 @@ function addTask() {
         li.innerHTML = inputBox.value;
         todoList.appendChild(li);
         inputBox.value = "";
-        
         let span = document.createElement('span');
         span.innerHTML = '\u00d7';
         li.appendChild(span);
-        
         saveData();
     }
 }

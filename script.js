@@ -30,7 +30,7 @@ todoList.addEventListener('click' , function(e) {
         e.target.parentElement.remove();
         saveData()
     }
-},false)
+})
 
 function saveData() {
     localStorage.setItem('data' , todoList.innerHTML)

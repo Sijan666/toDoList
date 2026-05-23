@@ -33,11 +33,11 @@ todoList.addEventListener('click' , function(e) {
 })
 
 function saveData() {
-    localStorage.setItem('data' , todoList.innerHTML)
+    sessionStorage.setItem('data' , todoList.innerHTML)
 }
 
 function showTask() {
-    todoList.innerHTML = localStorage.getItem('data')
+    todoList.innerHTML = sessionStorage.getItem('data')
 }
 
 showTask()
